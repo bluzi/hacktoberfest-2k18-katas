@@ -41,9 +41,7 @@ seeChangedFiles(files => {
     addedTests.length !== 1
   ) {
     console.error(`\
-###################################
-##             ERROR             ##
-###################################
+# Error
 
 For a Pull Request to be considered, it needs at least 3 things:
 - A modified file, containing your implementation of the Kata.
@@ -67,9 +65,7 @@ Yours only has:
     shoudExitWithFailure = true;
 
     console.error(`\
-###################################
-##           WARNING             ##
-###################################
+# Warning
 
 It looks like you have changed more than 3 files in this PR. Could you
 check that you only committed relevant files. For example, any file
@@ -88,9 +84,7 @@ ${files
 
   // Launch the tests
   console.log(`\
-###################################
-##       RUNNING TEST FILE       ##
-###################################
+# RUNNING TEST FILE
 
 Running command: "jest ${testFileToRun}"
 `);
