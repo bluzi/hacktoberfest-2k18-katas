@@ -7,8 +7,8 @@ describe('sieveOfEratosthenes', () => {
   });
 
   it('should return null if is not array of digits', () => {
-    expect(sieveOfEratosthenes().toEqual(null);
-    expect(sieveOfEratosthenes("qwerty").toEqual(null);
-    expect(sieveOfEratosthenes({t:"test"}).toEqual(null);
+    expect(sieveOfEratosthenes()).toEqual(null);
+    expect(sieveOfEratosthenes("qwerty")).toEqual(null);
+    expect(sieveOfEratosthenes({t:"test"})).toEqual(null);
   });
 })

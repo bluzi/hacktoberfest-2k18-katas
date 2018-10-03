@@ -1,3 +1,1 @@
-export const gcd = () => {
-  // TO IMPLEMENT IN ANOTHER PR
-};
+export const gcd = (a, b) =>  !b ? a : gcd(b, a % b);
