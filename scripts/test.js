@@ -20,7 +20,7 @@ function seeChangedFiles(cb) {
 
     cb(files);
   });
-}
+} 
 
 function runCommand(command, argv) {
   const { status } = spawnSync(command, argv, { stdio: 'inherit' });
