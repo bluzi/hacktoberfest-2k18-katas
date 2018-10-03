@@ -12,7 +12,7 @@ function seeChangedFiles(cb) {
       .map(([status, filename]) => ({
         filename,
         isAdded: status === 'A',
-        isModified: status === 'M',
+        isModified: status === 'M', 
         isTest: filename.indexOf('.test.js') !== -1,
       }))
       .filter(({ filename }) => filename.startsWith('src/'))
